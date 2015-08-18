@@ -1,0 +1,48 @@
+extends ../_shared/template
+
+block content
+	.row
+		.col.s12.m1
+			br
+		.col.s12.m7
+			.row
+				nav
+					.nav-wrapper
+						form
+							.input-field
+								input(id='search', type='search')
+								label(for='search')
+									i.material-icons search
+			.card
+				.card-image.colorized.teal
+					span.card-title Breakfast
+				.card-content
+					p This is your breakfast
+			.card
+				.card-image.colorized.orange
+					span.card-title Lunch
+				.card-content
+					p This is your breakfast
+			.card
+				.card-image.colorized.blue
+					span.card-title Dinner
+				.card-content
+					p This is your breakfast
+		.col.s12.m3
+			.card-panel.center
+				.card-content
+					canvas#myChart(width='250', height='250')
+					#legend
+			.indicator
+			.card-panel
+				span.card-title.medium Selected products
+				.divider
+				p
+					if products
+						i Products
+					else
+						i There are currently no selected products.
+	script(src='/vendor/Chart.js/Chart.min.js', type='text/javascript')
+	script(src='/public/scripts/schedule.js', type='text/javascript')
+						
+			

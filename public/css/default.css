@@ -1,0 +1,144 @@
+body,html{
+	overflow-x: hidden;
+}
+
+body{
+	background-color: #fafafa;
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+  }
+
+#top{
+	width: 100%;
+	height: 25px;
+	background-color: #0288d1;
+}
+
+header{
+	width: 100%;
+	height: 160px;
+	padding: 20px;
+	background-color: #03a9f4;
+}
+
+header h4{
+	color: #fff;
+	font-weight: normal;
+	font-size: 24px;
+}
+
+	header h4 > i {
+		margin-left: 10px;
+		margin-right: 5px;
+	    position: relative;
+	    top: 3px;
+		left: 3px;
+	}
+
+.tray > a {
+	width: 100%;
+	margin-left: 30px;
+}
+
+.addbtn {
+	position: relative;
+	top: 55px;
+}
+
+	.addbtn i {
+		color: #01547a !important;
+	}
+	
+main {
+	margin-top: 25px;
+}
+
+.schedules .material-icons{
+	width: 25px;
+}
+
+footer {
+	background-color: #4db6ac !important;
+}
+
+.hoverable:hover{ box-shadow: none !important; cursor: pointer; }
+.card-title.medium{ font-size: 20px; line-height: 40px; }
+.centered { margin: 0 auto !important; }
+
+/* Chart */
+#legend span {
+	float: left;
+    display: block;
+	width: 15px;
+	height: 15px;
+	margin-right: 15px;
+}
+
+#legend li {
+	text-align: left;
+}
+
+.indicator {
+	width: 100%;
+	height: 50px;
+	background-color: blue;
+	clear: both;
+}
+
+	/* Rating */
+	.rating {
+		position: relative;
+		top: -20px;
+	}
+	
+	
+	.rating i {
+		float: left;
+		width: 25px;
+		height: 15px;
+	}
+
+/* Collection */
+.collection {
+	margin: 0 !important;
+	border: none !important;
+}
+
+	.collection li:hover {
+		background-color: #c8ebfb;
+		cursor: pointer;
+	}
+
+/* Modal */
+.modal {
+	height: 300px;
+	overflow-x: hidden;
+}
+
+	.modal .collapsible {
+		margin: 0;
+	}
+	
+	.modal .row {
+		margin-top: 10px;
+	}
+	
+	.modal .col.s3.offset-s6 {
+		text-align: right !important;
+	}
+
+/* Card */
+.card-image.colorized{ height: 125px; }
+.card-title.medium{ font-size: 20px; line-height: 40px; }
+
+/* Icons */
+.material-icons.gold{ color: #fdd835; }
+.smaller.material-icons{ font-size: 20px !important; }
+.average.material-icons{ font-size: 26px !important; }
+.material-icons.darkblue { color: #01547a; }
+.material-icons.white { color: #FFF; background-color: rgba(255, 255, 255, 0) !important; }

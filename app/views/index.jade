@@ -1,0 +1,52 @@
+extends _shared/template
+
+block content
+	.row
+		.col.s12.m1
+			br
+		.col.s12.m7
+			each post in posts
+				.card
+					.card-image
+						img(src='public/img/' + post.image)
+						span.card-title #{post.title}
+					.card-content
+						p #{post.content}
+					.card-action
+						a(href=post.action.link) #{post.action.title}
+		.col.s12.m3
+			.card
+				.card-image.colorized.red.accent-1
+					span.card-title Eating schedules
+				.divider
+				ul.collection
+					each schedule in eatingSchedules
+						li.collection-item.avatar(onclick="redirect(" + schedule.id + ", 'meal')") 
+							img(src='public/img/user/' + schedule.author.img).circle
+							span.title #{schedule.title}
+							p #{schedule.purpose}
+							.rating.right
+								-for(var max = 5; max > 0; max--)
+									if schedule.rating > 0
+										i.material-icons.gold star_rate
+										-schedule.rating--
+									else
+										i.material-icons star_rate
+			.card
+				.card-image.colorized.deep-purple.accent-1
+					span.card-title Training schedules
+				.divider
+				ul.collection
+					each schedule in trainingSchedules
+						li.collection-item.avatar(onclick="redirect(" + schedule.id + ", 'training')") 
+							-console.log(schedule)
+							img(src='public/img/user/' + schedule.author.img).circle
+							span.title #{schedule.title}
+							p #{schedule.purpose}
+							.rating.right
+								-for(var max = 5; max > 0; max--)
+									if schedule.rating > 0
+										i.material-icons.gold star_rate
+										-schedule.rating--
+									else
+										i.material-icons star_rate

@@ -1,0 +1,19 @@
+{
+  "name": "Schedule",
+  "version": "0.0.0",
+  "authors": [
+    "Jeffrey van Hoven <wolferine@live.se>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "~0.97.0",
+    "Chart.js": "~1.0.2"
+  }
+}
